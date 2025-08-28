@@ -69,46 +69,16 @@ int main()
     //
     // Erreur E0007) Texte à l'extérieur de la chaîne de caractères
     //std::cout << "Erreur : Texte a l'exterieur de la chaine de caracteres"; oups \n
+    std::cout << "Erreur : Texte a l'exterieur de la chaine de caracteres oups \n"; 
     //
     // Erreur E0020) Oublier de définir la librairie standard std:: avant cout
-    //cout << "Erreur : pas de std:: avant cout\n";
+    std::cout << "Erreur : pas de std:: avant cout\n";
     //
     // Erreur E0065) Oublier l'opérateur <<
-    //std::cout "Erreur : pas d'opérateur <<\n";
+    std::cout << "Erreur : pas d'opérateur <<\n";
     //
     // Erreur E0065) Oublier le point virgule à la fin 
-    //std::cout << "Erreur : pas de point virgule\n"
-
-    // *** Opérateur de base ***
-    // +, -, *, / (voir clavier numérique)
-
-    // TODO: Afficher un calcul simple avec chaque opérateur avec des entiers
-    std::cout << "\nOperateurs de base (+, -, * /)\n";
-
-    // Erreur E3049) Opérateur exposant (^) n'existe pas en C++
-    // Symbole utilisé pour une autre opération dans le langage de programmation (XOR binaire)
-    //std::cout << 5 ^ 8;
-
-    // *** Ordre des opérations ***
-    // Respecte l'ordre normal en mathématique gauche vers la droite (PEMDAS) :
-    // 1) Parenthèses
-    // 2) Multiplication / Division
-    // 3) Ajout / Soustraction
-    // Il existe aussi des mots clés avec priorité qui sont propres à la programmation (ex. fonctions, cast, etc.)
-    //
-    // Exemple
-    // (10 + 2) * (15 + (10 - 20 / 4))
-    //
-    // TODO: Calculer à la main la réponse une étape à la fois
-    //
-    // TODO: Afficher la réponse à la Console
-
-    // Exercice 
-    // (50 - (8 * 5 + 2)) + (9 + 3 * (12 / (14 - 8)))
-    //
-    // TODO: Calculer à la main la réponse une étape à la fois
-    //
-    // TODO: Afficher la réponse 2 à la Console
+    std::cout << "Erreur : pas de point virgule\n";
 }
 
 // TODO: (Groupe 102) Prochain cours dans l'autre local reprendre les mêmes places avec les mêmes équipes
