@@ -441,7 +441,20 @@ int main()
 #pragma endregion
 
 	// TODO: Faire le premier exercice du Devoir ensemble
+	// *** Exercice 01 ***
+	// Moyenne de 3 nombres
+	double nombre1 = 81.42;
+	double nombre2 = -24.2;
+	double nombre3 = 65.142;
 
+	double moyenne = (nombre1 + nombre2 + nombre3) / 3;
+
+	std::cout << "La moyenne des trois nombres est :" << moyenne << "\n";
+	
+	// *** Exercice2 ***
+	// Calcul du périmètre de l'air d'un rectangle de longueur 12 et de largeur 7
+	
+	
 	// TODO: Faire le reste du Devoir et remettre avant la date sur Léa
 
 }
