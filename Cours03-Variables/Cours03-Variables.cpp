@@ -453,8 +453,14 @@ int main()
 	
 	// *** Exercice2 ***
 	// Calcul du périmètre de l'air d'un rectangle de longueur 12 et de largeur 7
+	int rectangleLongueur = 12;
+	int rectangleLargeur = 7;
 	
+	int airRectangle = rectangleLongueur * rectangleLargeur;
+	std::cout << "L'air du rectangle est : " << airRectangle << " cm""\n";
 	
+	int perimetreRectangle = (rectangleLongueur + rectangleLargeur) * 2;
+	std::cout << "Le périmetre du rectangle est : " << perimetreRectangle  << " cm""\n";
 	// TODO: Faire le reste du Devoir et remettre avant la date sur Léa
 
 }
