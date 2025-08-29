@@ -482,8 +482,18 @@ int main()
 	float conversionM = conversionCM / 100;
 	std::cout << "POuces = " << NombrePouces << ", Centimetre = " << conversionCM << "cm, Metres = " << conversionM << "m" "\n";
 	
+// *** Exercice 5 ***
+/*
+Calculer le BMI (Body Mass Index) d'une personne avec 
+une grandeur de 1.75 m pesant 160 lbs (2.2 lbs = 1 kg).
+*/
+	float grandeur = 1.75;
+	float masse = 160;// lbs
+	float conversionKilogramme = masse / 2.205;
+	float calculBMI = conversionKilogramme / grandeur * grandeur;
 	
-	
+	std::cout << "Calcul du BMI = poids en kg / hauteur en metres =" << calculBMI << "\n";
+
 	
 	
 	// TODO: Faire le reste du Devoir et remettre avant la date sur Léa
