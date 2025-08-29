@@ -9,6 +9,7 @@
 */
 
 #include <iostream>
+#include <cmath>
 
 int main()
 {
@@ -461,6 +462,30 @@ int main()
 	
 	int perimetreRectangle = (rectangleLongueur + rectangleLargeur) * 2;
 	std::cout << "Le périmetre du rectangle est : " << perimetreRectangle << " cm""\n";
+	/*
+	**** Exercice3***/
+	// calculer le volume d'une sphère de rayon 6 unités
+	
+	int rayonSphere = 6;
+	double calculVolume = (4.0 / 3.0) * M_PI * pow(r, 6);
+
+	//A revoir
+	
+	// *** Exercice 4 ****
+	// Convertir 100 pouces en cetimetres 
+	// avec 1 pouce = 2.54cm puis convertir le résulat en m
+	
+	float NombrePouces = 1;
+
+	float valeurCM = 2.54;
+	float conversionCM = NombrePouces * valeurCM;
+	float conversionM = conversionCM / 100;
+	std::cout << "POuces = " << NombrePouces << ", Centimetre = " << conversionCM << "cm, Metres = " << conversionM << "m" "\n";
+	
+	
+	
+	
+	
 	// TODO: Faire le reste du Devoir et remettre avant la date sur Léa
 
 }
