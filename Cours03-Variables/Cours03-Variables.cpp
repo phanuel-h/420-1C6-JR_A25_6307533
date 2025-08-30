@@ -497,5 +497,79 @@ une grandeur de 1.75 m pesant 160 lbs (2.2 lbs = 1 kg).
 	
 	
 	// TODO: Faire le reste du Devoir et remettre avant la date sur Léa
+	// Exercice 6
 
-}
+// Correction d’un programme
+
+// Calcul du volume du cylindre
+
+	double r = 5;
+
+	double hauteur = 10;
+
+	double vlm_cyl = 3.14159 * r * r * hauteur;
+
+		std::cout << "Le volume du cylindre est : " << vlm_cyl;
+
+	// Calcul du prix total du cylindre par volume
+
+	double prix = 12.99;
+
+	total = vlm_cyl * prix;
+
+	std::cout << "Le prix total est : " << total<<"\n";
+
+	// Conversion de température
+
+	double farenheit = 75;
+
+	double cel = (farenheit - 32) * 5 / 9;
+
+	std::cout << farenheit << " degrés Fahrenheit équivalent à " << cel << " degrés Celsius""\n";
+
+	// Calcul de l'âge en jours
+
+	int année = 25;
+
+	int MOIS = 3;
+
+		double jrs = année * 365 + MOIS * 30;
+
+	std::cout << "Age en jours : " << jrs;
+
+	// Calcul de l'aire d'un triangle
+
+	double BaseDuTriangle = 8;
+
+	double HauteurDuTriangle = 6;
+
+	int total = (BaseDuTriangle * HauteurDuTriangle) / 2;
+
+	std::cout << "L'aire du triangle est : " << total << "\n";
+
+// **** Exercice 7 ****
+	// calclu de la note finale d'un étudiant qui a obtenu les résultats suivants
+	/*
+	· Devoirs: 80% (vaut 20% de la note finale)
+
+· Examen mi-session: 70% (vaut 30% de la note finale)
+
+· Examen final: 90 (vaut 50% de la note finale)
+	*/
+	double devoirs = 80 * 20 / 100 * 100;
+	double examenMisession = 70 * 30 / 100 * 100;
+	double examenFinale = 90 * 50 / 100 * 100;
+	
+	std::cout << "Note finale de l'étudiant : " << examenFinale << "\n";
+
+// **** Exercice 9 *****
+/*
+* Calculer les informations suivantes pour peinturer une pièce de 5 m de 
+longueur par 4 mètres de largeur par 3 mètres de hauteur. 
+Chaque canne de peinture peut couvrir une surface de 8 m².
+*/
+	double pieceLongueur = 5;
+	double pieceLargeur = 4;
+	double piecehauteur = 3;
+	
+	double cannePeinture = 8 * 8
