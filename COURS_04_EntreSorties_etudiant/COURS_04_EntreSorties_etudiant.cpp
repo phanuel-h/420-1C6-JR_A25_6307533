@@ -388,7 +388,7 @@ int main()
 #pragma endregion
 
 	// TODO: Faire le Devoir et remettre avant la date de remise sur Léa
-	//****** EXERCICE *******
+	//****** EXERCICE 1 *******
 	/*
 	Corriger les erreurs de trocation dans les équations
 	*/
@@ -407,4 +407,23 @@ int main()
 	
 	cout << format("\n a = {}\n b = {}\n c = {}\n d = {}\n e = {}\n", a, b, c, d, e);
 
+	// exercice 2
+	// Écrire un programme qui lit les information d’une équation polynomiale suivante et retourne le resultat.
+
+	//Le programme doit demander les entrées suivants :
+
+	//a3 + b2 + c = ?
+	cout << "Entre le valeur de a : " ;
+	double aa;
+	cin >> aa;
+	cout << "Entre le valeur de b : \n";
+	double bb;
+	cin >> bb;
+
+	cout << "Entre le valeur de c : \n";
+	double cc;
+	cin >> cc;
+	double equation = (aa * aa) + (bb * bb) + cc;
+
+	cout << format("{}^3 + {}^2 + {} = {}\n", aa, bb, cc, equation);
 } // Fin de la fonction main(), ne pas supprimer

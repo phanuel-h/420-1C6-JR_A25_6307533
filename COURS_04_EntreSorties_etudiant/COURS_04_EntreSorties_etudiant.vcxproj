@@ -24,6 +24,7 @@
     <ProjectGuid>{ebfea4a7-40a7-4bab-b2dd-91d16348e7da}</ProjectGuid>
     <RootNamespace>COURS04EntreSortiesetudiant</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Cours04-EntreSorties_Etudiant</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -124,6 +125,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="COURS_04_EntreSorties_etudiant.cpp" />
+    <ClCompile Include="version simplifier.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

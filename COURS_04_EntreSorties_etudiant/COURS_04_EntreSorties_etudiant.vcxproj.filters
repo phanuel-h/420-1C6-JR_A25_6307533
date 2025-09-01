@@ -18,5 +18,8 @@
     <ClCompile Include="COURS_04_EntreSorties_etudiant.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="version simplifier.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
