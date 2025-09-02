@@ -572,4 +572,4 @@ Chaque canne de peinture peut couvrir une surface de 8 m².
 	double pieceLargeur = 4;
 	double piecehauteur = 3;
 	
-	double cannePeinture = 8 * 8
+	double cannePeinture = 8 * 8;

@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ebfea4a7-40a7-4bab-b2dd-91d16348e7da}</ProjectGuid>
-    <RootNamespace>COURS04EntreSortiesetudiant</RootNamespace>
+    <ProjectGuid>{482c94bd-3651-4942-a527-df6891efb1e1}</ProjectGuid>
+    <RootNamespace>Devoirs05Booleens</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Cours04-EntreSorties_Etudiant</ProjectName>
+    <ProjectName>Cours05_Devoirs</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -103,7 +103,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -125,8 +124,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="COURS_04_EntreSorties_etudiant.cpp" />
-    <ClCompile Include="version simplifier.cpp" />
+    <ClCompile Include="Devoirs05_Booleens.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
