@@ -426,4 +426,89 @@ int main()
 	double equation = (aa * aa) + (bb * bb) + cc;
 
 	cout << format("{}^3 + {}^2 + {} = {}\n", aa, bb, cc, equation);
+
+
+	// ****Exercice 3 ********
+	cout << "Entre le numéro de facture : \n";
+	int numeroFacture;
+	cin >> numeroFacture;
+
+	cout << "Entre le nom du client : \n";
+	string nomClient;
+		cin >> nomClient;
+
+		cout << "Nom de l'article 1 : \n";
+		string article1;
+		cin >> article1;
+
+		cout << "Entre le cout de l'article 1n\n";
+		int coutArticle1;
+		cin >> coutArticle1;
+
+		cout << "Quantité : \n";
+		int quantité;
+		cin >> quantité;
+
+		cout << "Nom de l'article 2 : \n";
+		string article2;
+		cin >> article2;
+
+		cout << "Cout unitaire : \n";
+		int coutUnitaire1;
+		cin >> coutUnitaire1;
+
+
+		cout << "Quantité : \n";
+		int quantité2;
+		cin >> quantité2;
+
+		cout << "Nom de l'article 3 : \n";
+		string article3;
+		cin >> article3;
+
+		cout << "Cout unitaire : \n";
+		int coutUnitaire3;
+		cin >> coutUnitaire3;
+
+
+		cout << "Quantité : \n";
+		int quantité3;
+		cin >> quantité3;
+
+	// calcul des tautaux	
+		double Totale = (coutArticle1 * quantité);
+		double totale2 = (coutUnitaire1 * quantité2); 
+		double totale3 = (coutUnitaire3* quantité3);
+		
+		double Tauxtaux = totale2, totale3, totale;
+	
+	// SousTotale avant taxe
+		double totaleAvantTaxe = (coutArticle1 * quantité) + (coutUnitaire1 * quantité2) + (coutUnitaire3 * quantité3);
+	//taxes
+		double TPS =  0.05;
+		double TVQ = 0.09975;
+		double calculTVQ = TVQ * Tauxtaux;
+		double calculTPS = TPS * Tauxtaux;
+ 
+		//totale apres taxes
+		double totaleApresTaxe = totaleAvantTaxe + TVQ + TPS;
+		
+
+	// affichage
+		cout << format("Facture {}\nClient {}\n Nom de l'article {} \t Coût {} \tSous-total \n"
+			, numeroFacture, nomClient, article1, coutArticle1,totale);
+
+		cout << format("\tNom de l'article {} \t Coût {} \tSous-total{}\n "
+			,article2, coutUnitaire1,totale2);
+
+		cout << format("\tNom de l'article {} \t Coût {} \tSous-total{}\n "
+			, article3, coutUnitaire3, totale3);
+
+		cout << format("Sous-totale\t{} $", totaleAvantTaxe);
+		
+		cout << format("TPS {}\t {} $", TPS, calculTPS);
+		cout << format("TVQ {}\t {} $", TVQ, calculTVQ);
+
+		cout << format("Total: \t{}$", totaleApresTaxe);
+
 } // Fin de la fonction main(), ne pas supprimer

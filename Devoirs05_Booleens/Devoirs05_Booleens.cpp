@@ -14,7 +14,7 @@ using namespace std;
 
 
 int main()
-{
+{ 
     setlocale(LC_ALL, "fr_FR.UTF-8"); // Configuration de la console en français unicode 
    
     std::cout << "--- Devoir 05 - Ibenue - 6307533 ---\n";
