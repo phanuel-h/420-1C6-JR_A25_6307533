@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cours05_IF", "Cours05_IF\Co
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cours05_Devoirs", "Devoirs05_Booleens\Devoirs05_Booleens.vcxproj", "{482C94BD-3651-4942-A527-DF6891EFB1E1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "COURS06_ConditionsAvancees_Etudiants", "COURS06_ConditionsAvancees_Etudiants\COURS06_ConditionsAvancees_Etudiants.vcxproj", "{CC21209B-5FB2-47A9-BEA2-D4EE2BD66DE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,18 @@ Global
 		{482C94BD-3651-4942-A527-DF6891EFB1E1}.Release|x64.Build.0 = Release|x64
 		{482C94BD-3651-4942-A527-DF6891EFB1E1}.Release|x86.ActiveCfg = Release|Win32
 		{482C94BD-3651-4942-A527-DF6891EFB1E1}.Release|x86.Build.0 = Release|Win32
+		{CC21209B-5FB2-47A9-BEA2-D4EE2BD66DE2}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{CC21209B-5FB2-47A9-BEA2-D4EE2BD66DE2}.Debug|Any CPU.Build.0 = Debug|x64
+		{CC21209B-5FB2-47A9-BEA2-D4EE2BD66DE2}.Debug|x64.ActiveCfg = Debug|x64
+		{CC21209B-5FB2-47A9-BEA2-D4EE2BD66DE2}.Debug|x64.Build.0 = Debug|x64
+		{CC21209B-5FB2-47A9-BEA2-D4EE2BD66DE2}.Debug|x86.ActiveCfg = Debug|Win32
+		{CC21209B-5FB2-47A9-BEA2-D4EE2BD66DE2}.Debug|x86.Build.0 = Debug|Win32
+		{CC21209B-5FB2-47A9-BEA2-D4EE2BD66DE2}.Release|Any CPU.ActiveCfg = Release|x64
+		{CC21209B-5FB2-47A9-BEA2-D4EE2BD66DE2}.Release|Any CPU.Build.0 = Release|x64
+		{CC21209B-5FB2-47A9-BEA2-D4EE2BD66DE2}.Release|x64.ActiveCfg = Release|x64
+		{CC21209B-5FB2-47A9-BEA2-D4EE2BD66DE2}.Release|x64.Build.0 = Release|x64
+		{CC21209B-5FB2-47A9-BEA2-D4EE2BD66DE2}.Release|x86.ActiveCfg = Release|Win32
+		{CC21209B-5FB2-47A9-BEA2-D4EE2BD66DE2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

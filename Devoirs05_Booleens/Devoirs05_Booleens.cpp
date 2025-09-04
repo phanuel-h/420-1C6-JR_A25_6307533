@@ -87,5 +87,30 @@ else {
     system("pause"); 
     system("cls");
 
+    // **** EXERCICE 2****//
+    cout << "EXERCIE 2";
+    cout << "Entre le premier nombre exemple:(12.0)";
+    double nombre1;
+    cin >> nombre1;
 
-}
+    cout << "Entre le deuxieme nombre a virgule exemple:(12.0)";
+    double nombre2;
+    cin >> nombre2;
+    
+    double calculDifference = nombre1 - nombre2;
+    if (calculDifference > 0)
+    {
+        cout << format("Nombres {}  et {} ont une difference de {:.3f}\n",nombre1 ,nombre2,calculDifference);
+
+    }
+    else if (calculDifference == 0)
+    {
+        cout << format("Nombres {}  et {} sont égaux\n", nombre1, nombre2);
+    }
+    else
+    {
+        cout << format("Nombres {} et {} sont inferieur à 0", nombre1, nombre2);
+    }
+    //****EXERCICE 3****/
+    
+} 

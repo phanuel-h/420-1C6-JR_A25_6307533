@@ -406,6 +406,7 @@ int main()
 	double e = (cPartieEntiere + 3) / 15; // 1.0666...
 	
 	cout << format("\n a = {}\n b = {}\n c = {}\n d = {}\n e = {}\n", a, b, c, d, e);
+	// Il faut aumoins avoir un double dans lOperation pour avoir un resulata en double
 
 	// exercice 2
 	// Écrire un programme qui lit les information d’une équation polynomiale suivante et retourne le resultat.
