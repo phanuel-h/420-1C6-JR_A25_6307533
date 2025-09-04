@@ -143,4 +143,25 @@ int main()
     {
         cout << "Erreur : courriels différents, création du compte annulée.";
     }
-}
+    //exercice 4
+    cout << "EXERCICE 4\n";
+    cout << "--- Réservation de billets d’événements ---\n";
+    
+    cout << "entrer le nombre de personne (négatifs pour un remboursement) :";
+    double nombrePersonne;
+    cin >> nombrePersonne;
+    double prixBIlletes
+    double rabais10 = 
+
+    if (nombrePersonne <20)
+    {
+
+    }
+
+
+
+
+
+
+
+}   
