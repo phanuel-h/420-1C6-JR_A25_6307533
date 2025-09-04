@@ -14,38 +14,38 @@ using namespace std;
 
 
 int main()
-{ 
+{
     setlocale(LC_ALL, "fr_FR.UTF-8"); // Configuration de la console en français unicode 
-   
+
     std::cout << "--- Devoir 05 - Ibenue - 6307533 ---\n";
     using std::format;
     using std::cout;
     using std::cin;
     using std::string;
-    
-    
 
 
 
 
-// Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
-// Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
 
-// Astuces pour bien démarrer : 
-//   1. Utilisez la fenêtre Explorateur de solutions pour ajouter des fichiers et les gérer.
-//   2. Utilisez la fenêtre Team Explorer pour vous connecter au contrôle de code source.
-//   3. Utilisez la fenêtre Sortie pour voir la sortie de la génération et d'autres messages.
-//   4. Utilisez la fenêtre Liste d'erreurs pour voir les erreurs.
-//   5. Accédez à Projet > Ajouter un nouvel élément pour créer des fichiers de code, ou à Projet > Ajouter un élément existant pour ajouter des fichiers de code existants au projet.
-//   6. Pour rouvrir ce projet plus tard, accédez à Fichier > Ouvrir > Projet et sélectionnez le fichier .sln.
 
-cout << "Entrer la largeur du rectangle : ";
-int largeurRectangle; 
-cin >> largeurRectangle; 
-    
-    cout << "Entrer la hauteur du rectangle : "; 
-    int hauteurRectangle; 
-    cin >> hauteurRectangle; 
+    // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
+    // Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
+
+    // Astuces pour bien démarrer : 
+    //   1. Utilisez la fenêtre Explorateur de solutions pour ajouter des fichiers et les gérer.
+    //   2. Utilisez la fenêtre Team Explorer pour vous connecter au contrôle de code source.
+    //   3. Utilisez la fenêtre Sortie pour voir la sortie de la génération et d'autres messages.
+    //   4. Utilisez la fenêtre Liste d'erreurs pour voir les erreurs.
+    //   5. Accédez à Projet > Ajouter un nouvel élément pour créer des fichiers de code, ou à Projet > Ajouter un élément existant pour ajouter des fichiers de code existants au projet.
+    //   6. Pour rouvrir ce projet plus tard, accédez à Fichier > Ouvrir > Projet et sélectionnez le fichier .sln.
+
+    cout << "Entrer la largeur du rectangle : ";
+    int largeurRectangle;
+    cin >> largeurRectangle;
+
+    cout << "Entrer la hauteur du rectangle : ";
+    int hauteurRectangle;
+    cin >> hauteurRectangle;
 
     if (largeurRectangle <= 0)
     {
@@ -56,35 +56,35 @@ cin >> largeurRectangle;
         cout << "Erreur : hauteur ne peut être 0 ou négative.";
     }
 
-else if (largeurRectangle == hauteurRectangle) 
-{ 
-    cout << format("Carré {} par {}\n", largeurRectangle, hauteurRectangle); 
-}
+    else if (largeurRectangle == hauteurRectangle)
+    {
+        cout << format("Carré {} par {}\n", largeurRectangle, hauteurRectangle);
+    }
     else if (largeurRectangle > hauteurRectangle) {
-        
-        cout << format("Rectangle {} par {}\n", largeurRectangle,hauteurRectangle); 
-           
-            double ratioHauteur = largeurRectangle / hauteurRectangle; 
-        
-        cout << format("{:.3f}% plus large que haut\n", ratioHauteur); 
-} 
-else {
-    cout << format("Rectangle{} par{}\n", largeurRectangle, hauteurRectangle); 
-    cout << "Plus haut que large\n"; 
-    
-           double RatioLargeur = hauteurRectangle / largeurRectangle; 
-            
-            cout << format("{:.3f}% plus haut que large\n", RatioLargeur); 
-} 
 
-        double aire = largeurRectangle * hauteurRectangle; 
-        double PERIMÈTRE = 2 * (largeurRectangle + hauteurRectangle);
-       
-        cout << format("Aire : {:.2f}\n", aire); 
-   
-    cout << format("Perimètre : {:.2f}\n", PERIMÈTRE); 
+        cout << format("Rectangle {} par {}\n", largeurRectangle, hauteurRectangle);
 
-    system("pause"); 
+        double ratioHauteur = largeurRectangle / hauteurRectangle;
+
+        cout << format("{:.3f}% plus large que haut\n", ratioHauteur);
+    }
+    else {
+        cout << format("Rectangle{} par{}\n", largeurRectangle, hauteurRectangle);
+        cout << "Plus haut que large\n";
+
+        double RatioLargeur = hauteurRectangle / largeurRectangle;
+
+        cout << format("{:.3f}% plus haut que large\n", RatioLargeur);
+    }
+
+    double aire = largeurRectangle * hauteurRectangle;
+    double PERIMÈTRE = 2 * (largeurRectangle + hauteurRectangle);
+
+    cout << format("Aire : {:.2f}\n", aire);
+
+    cout << format("Perimètre : {:.2f}\n", PERIMÈTRE);
+
+    system("pause");
     system("cls");
 
     // **** EXERCICE 2****//
@@ -96,11 +96,11 @@ else {
     cout << "Entre le deuxieme nombre a virgule exemple:(12.0)";
     double nombre2;
     cin >> nombre2;
-    
+
     double calculDifference = nombre1 - nombre2;
     if (calculDifference > 0)
     {
-        cout << format("Nombres {}  et {} ont une difference de {:.3f}\n",nombre1 ,nombre2,calculDifference);
+        cout << format("Nombres {}  et {} ont une difference de {:.3f}\n", nombre1, nombre2, calculDifference);
 
     }
     else if (calculDifference == 0)
@@ -112,5 +112,35 @@ else {
         cout << format("Nombres {} et {} sont inferieur à 0", nombre1, nombre2);
     }
     //****EXERCICE 3****/
-    
-} 
+    cout << "EXERICE3\n";
+    cout << "Entrer un couriel: \n";
+    string courriel;
+    cin >> courriel;
+
+    cout << "COnfirmer le courriel\n";
+    string confirmationCourriel;
+    cin >> confirmationCourriel;
+
+    if (confirmationCourriel == courriel)
+    {
+        cout << "Entrer un mot de passe\n";
+        string motDePasse;
+        cin >> motDePasse;
+
+        cout << "confirmer le mot de passe\n";
+        string confirmationMotdePasse;
+        cin >> confirmationCourriel;
+        if (confirmationMotdePasse != motDePasse)
+        {
+            cout << "Erreur : mots de passe différents, création du compte annulée.\n";
+        }
+        else
+        {
+            cout << format("Succès : nouveau compte {} a été créé!\n", confirmationCourriel);
+        }
+    }
+    else
+    {
+        cout << "Erreur : courriels différents, création du compte annulée.";
+    }
+}
