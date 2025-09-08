@@ -7,6 +7,7 @@
 #include <iostream> // Importation des librairies
 #include <format>
 #include <string>
+#include <ctime>
 
 using namespace std;
 
@@ -150,17 +151,103 @@ int main()
     cout << "entrer le nombre de personne (négatifs pour un remboursement) :";
     double nombrePersonne;
     cin >> nombrePersonne;
-    double prixBIlletes
-    double rabais10 = 
+    double prixBilltes = 29.99;
+    double total1 = nombrePersonne * prixBilltes;
+    int rabais1 = 10;
+    int rabais2 = 25;
+    string aucunRabais = "Aucun rabais\0";
 
-    if (nombrePersonne <20)
+    double rabais10 = prixBilltes * (rabais1 / 100);
+    double rabais25 = prixBilltes * ( rabais2 / 100);
+
+    if (nombrePersonne > 50)
     {
+        cout << format("Sous-Total : {}$ \n",total1);
+        cout << format("Rabais : {}$\n", rabais2);
+        cout << format("Total : {}$ \n", rabais25);
+    }
+    else if (nombrePersonne > 20)
+    {
+        cout << format("Sout-total$  : {}\n Rabais : {}$ \n Total : {}$\n", total1, rabais1, rabais10);
 
     }
+    else if (nombrePersonne <20)
+    {
+        cout << format("Sout-total$  : {}\n Rabais : {}$ \n Total : {}$\n", total1, aucunRabais,total1);
+    }
+    else if (nombrePersonne < 0)
+    {
+        
+        double remboursement1 = prixBilltes - nombrePersonne;
+        cout << "Entrer le total de la facture originale :  \n";
+        double factureOriginale;
+        cin >> factureOriginale;
+        
+        cout << "Entrer le nombre de jours avant l’événement :  \n";
+        int jourAvantEvenement;
+        cin >> jourAvantEvenement;
 
+        double pourcentage1 = (100 / 100) * 100;
+        double pourcentage2 = (50 / 100) * 100;
+        double pourcentage3 = (10 / 100) * 100;
+        double remboursement2 = pourcentage3/ jourAvantEvenement;
 
+        double total7 = remboursement1 - pourcentage1;
+        double total7_5 = remboursement1 - pourcentage2;
+        double totalMoins5 = remboursement1 - pourcentage3;
 
+         if (jourAvantEvenement >= 7)
+        {
+            cout << format("Pourcentage de remboursement : {}\n Total originale : {}\n Total du remboursement : {}\n", pourcentage1,factureOriginale,total7,nombrePersonne);
 
+        }
+         else if (jourAvantEvenement >= 5 <= 7)
+         {
+             cout << format("Pourcentage de remboursement : {}\n Total originale : {}\n Total du remboursement : {}\n", pourcentage2, factureOriginale, total7_5, nombrePersonne);
+         }
+
+         else if (jourAvantEvenement < 5)
+         {
+             cout << format("Pourcentage de remboursement : {}\n Total originale : {}\n Total du remboursement : {}\n Remboursement par personne : {}\n"
+                 , pourcentage3, factureOriginale, totalMoins5, nombrePersonne,remboursement2);
+         }
+
+        else if (jourAvantEvenement <= 0)
+             {
+                    cout << "Erreur : événement a déjà eu lieu il y a ### jours, impossible d’effectuer un remboursement.";
+               }
+    }
+    system("pause");
+    system("cls");
+
+    cout << "EXERCICE 5\n";
+    cout << "-- Réservation d'un siège d'avion -- \n Catégorie disponibles (affaire, Premium ,economie)";
+    cout << "Entrez une categorie";
+    string categorie;
+    cin >> categorie;
+
+    if (categorie != "affaire" && categorie != "premium" && categorie != "economie")
+    {
+        cout << "Erreur : la catégorie " << categorie << " n’existe pas,réservation annulée. ";
+    }
+    int siege;
+    int siegeMin;
+    int siegeMax;
+    if (categorie == "affaire") {
+        siegeMin = 1;
+        siegeMax = 20;
+        cout << "Sélectionner un siège affaire [1 à 20] : ";
+    }
+    else if (categorie == "premium") {
+        siegeMin = 21;
+        siegeMax = 50;
+        cout << "Sélectionner un siège premium [21 à 50] : ";
+    }
+    else { // economie
+        siegeMin = 51;
+        siegeMax = 150;
+        cout << "Sélectionner un siège économie [51 à 150] : ";
+    }
 
 
 
