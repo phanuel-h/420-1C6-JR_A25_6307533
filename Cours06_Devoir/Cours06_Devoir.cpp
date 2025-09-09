@@ -98,12 +98,60 @@ int main()
 	{
 		if (totalFacture >= 100 && NombreProduit >= 10)
 		{
-			rabais = 7;
+			rabais = 5;
 		}
 	}
 	
-	cout << format("*** Rabais *** \n Membre \t:{}\n Nombre de produits \t:{}\n Sous"
+	cout << format("*** Rabais *** \n Membre \t:{}\n Nombre de produits \t:{}\n Sous-total \t:\n"
 		,typeMembre,NombreProduit);
 
+	cout << "--- Achat de billets 3/49 ---";
+
+	cout << "enter le numero 1:";
+	int numero1;
+	cin >> numero1;
+	if (numero1 >= 1 && numero1 <= 49)
+	{
+		cout << "Entrer le numero 2:";
+		int numero2;
+		cin >> numero2;
+
+		if (numero2 >= 1 && numero2 <= 49 )
+		{
+			cout << "Entrer le numero 3:";
+			int numero3;
+			cin >> numero3;
+
+			if (numero3 == numero2 || numero3 == numero3)
+			{
+				cout << format("le nombre {} a déjà été sélectionné, achat annulé.",numero3)
+			}
+
+			else
+			{
+				cout << format("le nombre {} n’est pas entre 1 et 49, achat annulé.", numero3)
+			}
+		}
+		else if (numero2 == numero1)
+		{
+			cout << format("le nombre {} a déjà été sélectionné, achat annulé.",numero2)
+		}
+		else 
+		
+		{
+			cout << format("le nombre {} n’est pas entre 1 et 49, achat annulé.",numero2)
+		}
+	
+	}
+		int ordreNum = 
+
+	else if (numero1 > numero2)
+		cout <<"numeros croissant du billet: "
+	}
+
+	
+	
+
+	
 
 }

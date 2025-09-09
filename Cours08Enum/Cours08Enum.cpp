@@ -95,6 +95,23 @@ enum Raccourci
 //	Virgule = 70,
 //} // Erreur
 
+enum calcul
+{
+	//Invalide =-1,
+
+	simple = 0,
+	exposant2 = 1,
+	exposant3 = 1000,
+};
+
+enum temperature
+{
+	celcius = 'c',
+	CelciusMajuscule = 'C',
+	Farenheit = 'f',
+	FarenheitMajuscule = 'F',
+};
+
 int main()
 {
 	// Configuration de la console en Unicode pour les accents
@@ -135,7 +152,11 @@ int main()
 	cout << "\n--- Switch enum (int) ---\n";
 
 	// Lire un nombre à la Console
-	cout << "Entrer un nombre à calculer (0, 1, 1000) : ";
+	cout << format("Entrer un nombre à calculer ({}, {}, {}) : ",
+		(int)calcul::simple,
+		(int)calcul::exposant2,
+		(int)calcul::exposant3,
+							);
 	int nombre;
 	cin >> nombre;
 
@@ -145,17 +166,17 @@ int main()
 	// Effectuer le calcul et afficher le message selon le nombre entré par l'utilisateur
 	switch (nombre)
 	{
-	case 0:
+	case calcul:: simple:
 		resultat += nombre;
 		cout << format("Choix {} : Message seulement pour 0\n", nombre);
 		break;
 
-	case 1:
+	case calcul::exposant2:
 		resultat += nombre * nombre;
 		cout << format("Choix {} : Message seulement pour 1\n", nombre);
 		break;
 
-	case 1000:
+	case calcul::exposant3:
 		resultat += nombre * nombre * nombre;
 		cout << format("Choix {} : Message seulement pour 1000\n", nombre);
 		break;
@@ -183,6 +204,8 @@ int main()
 	cout << "\nEntre le format de la température : ";
 	char choixTemperature;
 	cin >> choixTemperature;
+
+	
 
 	// Calculer la températeur selon le choix de l'utilisateur
 	switch (choixTemperature)
