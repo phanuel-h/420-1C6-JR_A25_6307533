@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a01cb601-f3c6-4af1-a8db-a2ce64895602}</ProjectGuid>
-    <RootNamespace>Cours06Devoir</RootNamespace>
+    <ProjectGuid>{84eae2c8-ed1c-421a-8d85-942d4c33bd3c}</ProjectGuid>
+    <RootNamespace>Cours08Enum</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -124,7 +124,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Cours06_Devoir.cpp" />
+    <ClCompile Include="Cours08Enum.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

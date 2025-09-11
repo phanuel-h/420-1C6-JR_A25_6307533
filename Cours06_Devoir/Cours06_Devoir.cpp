@@ -23,39 +23,30 @@ int main()
 	// 
 	// 1) true ||  (45 <= 40 && "a" != "b");
 	// 2) true ||  (false && "a" != "b");
-	//3)  true ||  (false && false);
-	// 4)  true ||false ;
-	// 5)  true ;
+	// 3) true ||  (false && true);
+	// 4) true ||  false;
+	// 5) true
+
 	int a = 20;
 	int b = 30;
 	int c = 50;
 	bool reponseB = c == a + b && (b - 30 > 0 || b - a > 0);
+	
+	// 50 == 20 + 30 && (30-30 > 0 || 30 - 20 > 0);
 
-	// (-10 > 0 || 100 > 0) && (-10 > 100 || (100 > 0 || -55 > 0));
-	// 1) false || true) && (-10 > 100 || (100 > 0 || -55 > 0));
-	// 2)  true && (-10 > 100 || (100 > 0 || -55 > 0));
-	// 3) true && (false|| (100 > 0 || -55 > 0));
-	// 4) true && (false|| (TRUE || -55 > 0));
-	// 5) true && (false|| (TRUE || false));
-	// 6) true && (false|| TRUE );
-	//7 ) true && TRUE ;
-	//8) true
+	// 1) 50 == 20 + 30 && (0> 0 || 30 - 20 > 0);
+	// 2) 50 == 20 + 30 && (false || 30 - 20 > 0);
+	// 3) 50 == 20 + 30 && (false || 10 > 0);
+	// 4)  50 == 20 + 30 && (false || true);
+	// 5) TRUE && (false || true);
+	// 6) TRUE &&  true;
+	// 7) true3.
+
 	int d = -10;
 	int e = 100;
 	int f = -55;
 	bool reponseC = (d > 0 || e > 0) && (d > e || (e > 0 || f > 0));
 
-	//((-10.0 == -10.0 && 100 == g) || i == "I" || (100 > 10.0 && i == "i");
-
-	// 1) ((TRUE && 100 == -10.0) || i == "I" || (100 > -10.0 && i == "i");
-	// 2) ((TRUE && FALSE) || i == "I" || (100 > -10.0 && i == "i");
-	// 3) (FALSE|| i == "I" || (100 > -10.0 && i == "i");
-	// 4) (FALSE|| i == "I" || (TRUE && i == "i");
-	// 5) (FALSE|| i == "I" || (TRUE && TRUE);
-	// 6) (FALSE|| i == "I" || TRUE) ;
-	// 7) (FALSE|| FALSE|| TRUE) ;
-	// 8) (FALSE|| TRUE) ;
-	// 9) TRUE ;
 
 	double g = -10.0;
 	int h = 100;
@@ -70,31 +61,97 @@ int main()
 	cout << format("Réponse finale C : {}\n", reponseC);
 	cout << format("Réponse finale D : {}\n", reponseD);
 
-
 	// EXERCICE 2
-	cout << "EXERCICE 2";
+	cout << "enter le total de la facture : ";
+	double totalFacture;
+	cin >> totalFacture;
 
-	cout << "Entrer le monatnt total de la facture :\n";
-	double montantTotaleFacture;
-	cin >> montantTotaleFacture;
+	cout << "entere le nombre de profuit achetés : \n";
+	int NombreProduit;
+	cin >> NombreProduit;
 
-	cout << "Entere le nombre de produit achetés\n";
-	int nombreProduit;
-	cin >> nombreProduit;
+	cout << "entrer le type de memebre (or, argent,bronze): \n";
+	string typeMembre;
+	cin >> typeMembre;
 
-	cout << "Entrer le type de membre (or, argent,bronze): \n"
-
-
-
-
-
+	double rabais = 0;
+	
 
 
+	if (typeMembre == "or")
 
+	{
+		if (totalFacture > 30)
+		{
+			rabais = 20;
+		}
+	}
+	else if (typeMembre == "argent")
+	{
+		if (totalFacture >= 50 || NombreProduit >= 5)
+		{
+			rabais = 10;
+		}
+	}
 
+	else if (typeMembre == "bronze")
+	{
+		if (totalFacture >= 100 && NombreProduit >= 10)
+		{
+			rabais = 5;
+		}
+	}
+	
+	cout << format("*** Rabais *** \n Membre \t:{}\n Nombre de produits \t:{}\n Sous-total \t:\n"
+		,typeMembre,NombreProduit);
 
+	cout << "--- Achat de billets 3/49 ---";
 
+	cout << "enter le numero 1:";
+	int numero1;
+	cin >> numero1;
+	if (numero1 >= 1 && numero1 <= 49)
+	{
+		cout << "Entrer le numero 2:";
+		int numero2;
+		cin >> numero2;
 
+		if (numero2 >= 1 && numero2 <= 49 )
+		{
+			cout << "Entrer le numero 3:";
+			int numero3;
+			cin >> numero3;
 
+			if (numero3 == numero2 || numero3 == numero3)
+			{
+				cout << format("le nombre {} a déjà été sélectionné, achat annulé.",numero3)
+			}
+
+			else
+			{
+				cout << format("le nombre {} n’est pas entre 1 et 49, achat annulé.", numero3)
+			}
+		}
+		else if (numero2 == numero1)
+		{
+			cout << format("le nombre {} a déjà été sélectionné, achat annulé.",numero2)
+		}
+		else 
+		
+		{
+			cout << format("le nombre {} n’est pas entre 1 et 49, achat annulé.",numero2)
+		}
+	
+	}
+		int ordreNum = 
+
+	else if (numero1 > numero2)
+		cout <<"numeros croissant du billet: "
+	}
+
+	
+	
+
+	
 
 }
