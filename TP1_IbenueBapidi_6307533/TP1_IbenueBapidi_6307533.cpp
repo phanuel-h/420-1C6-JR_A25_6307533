@@ -5,18 +5,46 @@
 #include <format>
 #include <string>
 
+using namespace std;
 int main()
 {
     std::cout << "Hello World!\n";
+
+    // TODO: Afficher en-tête
+    /*
+        *********************************************************** * Imprimerie CSTJ * * Par Votre Nom (Votre Matricule) 
+        * ***********************************************************
+    */
+
+    // TODO: Demander le matricule ou numero d'employé
+
+    // TODO: AUtTE chose est rentrer afficher errreur : Erreur : 0 est un matricule ou numéro d'employé invalide, impression annulée.
+
+    // TODO: Afficer  numero client et 2COMMANDE POUR L'EPLoyé ....
+    // TODO : Afficher -- pages --- et demander le nombre de pages
+    // TODO: Afficher --EXEMPALIRES----
+    //TODOD: demamder le nombre d'exemplaires
+    /* TODO: affciher
+    1) Lettre(8 1 / 2 x 11) (0.11 $ par page)
+    2) Légal(8 1 / 2 x 14)  (0.13 $ par page)
+    3) Photo(1.24 $ par page)
+    */
+    //TODO: demander le choix de papier 
+    // TODO : Faire la verifications pour qe lòption entrer soit celle dans la liste des choix de papiers
+    // TODO : Afficher erreur :Erreur : 4 n'est pas un mode d'impression valide, impression annulée. si lentree nest pas dans la liste 
+    // TODO : Afficher 
+    /*
+    --- Mode d'impression ---
+
+1) Recto en noir et blanc            (100 %)
+2) Recto-verso en noir et blanc      (150 %, moitié des pages)
+3) Recto en couleur                  (300 %)
+4) Recto-verso en couleur            (425 %, moitié des pages)
+    
+    
+    */
+
+    // TODO demander d'enter le mode d'impression
+
 }
 
-// Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
-// Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
-
-// Astuces pour bien démarrer : 
-//   1. Utilisez la fenêtre Explorateur de solutions pour ajouter des fichiers et les gérer.
-//   2. Utilisez la fenêtre Team Explorer pour vous connecter au contrôle de code source.
-//   3. Utilisez la fenêtre Sortie pour voir la sortie de la génération et d'autres messages.
-//   4. Utilisez la fenêtre Liste d'erreurs pour voir les erreurs.
-//   5. Accédez à Projet > Ajouter un nouvel élément pour créer des fichiers de code, ou à Projet > Ajouter un élément existant pour ajouter des fichiers de code existants au projet.
-//   6. Pour rouvrir ce projet plus tard, accédez à Fichier > Ouvrir > Projet et sélectionnez le fichier .sln.
