@@ -2,11 +2,74 @@
 //
 
 #include <iostream>
+#include <format>
+#include <string>
+
+using namespace std;
+
+// Notes
+
+const int NOTE_A_MAX = 100;
+const int NOTE_A_MIX = 90;
+const int NOTE_B_MAX = 89;
+const int NOTE_B_MIN = 80;
+const int NOTE_C_MAX = 79;
+const int NOTE_C_MIN = 70;
+const int NOTE_D_MAX = 69;
+const int NOTE_D_MIN = 60;
+
+const int NOTE_F_MAX = 59;
+const int NOTE_F_MIN = 0;
+
+// LETTRES
+
+const char NOTE_A_MAJ = 'A';
+const char NOTE_A_MINs = 'a';
+const char NOTE_B_MAJ = 'B';
+const char NOTE_B_MINS = 'b';
+const char NOTE_C_MAJ = 'C';
+const char NOTE_C_MINS = 'c';
+const char NOTE_D_MAJ = 'D';
+const char NOTE_D_MINS = 'd';
+const char NOTE_F_MAJ = 'F';
+const char NOTE_F_MINS = 'f';
 
 int main()
 {
     std::cout << "Hello World!\n";
+
+    // Exercice 1
+
+    cout << "Entrer une note finale = A, B, C, D, F";
+    char noteFinale;
+    cin >> noteFinale;
+
+    switch (noteFinale)
+    {
+    default:
+        break;
+    }
+
+    //ExERCICE 2
+
+    cout << "Entrer le jour (1 - 31) :";
+    int Jour;
+    cin >> Jour;
+
+    cout << "Entrer le mois (1 - 12) :";
+    int mois;
+    cin >> mois;
+
+
+
+
+
+
+
+
+
 }
+
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
 // Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
