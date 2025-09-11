@@ -74,11 +74,15 @@ int main()
 	// EXERCICE 2
 	cout << "EXERCICE 2";
 
-	cout << "Entrer le monatnt total de la facture :";
+	cout << "Entrer le monatnt total de la facture :\n";
 	double montantTotaleFacture;
 	cin >> montantTotaleFacture;
 
-	cout << "Entere le nombre de produit achetés";
+	cout << "Entere le nombre de produit achetés\n";
+	int nombreProduit;
+	cin >> nombreProduit;
+
+	cout << "Entrer le type de membre (or, argent,bronze): \n"
 
 
 
